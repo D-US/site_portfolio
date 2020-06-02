@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+   <div class="container-fluid bg-warning" style="height:70vh">
+       <div class="row text-center">
+           <div class="col-md-6">
+               <i class="fas fa-code ml-3 text-center" style="font-size:258px;margin-top:15%"></i>
+           </div>
+           <div class="col-md-6">
+         <h3 class=" ml-auto" style="font-size:35px;margin-top:18%">Hello<br> precious developeur integrateur junior</h3>
+
+                                              {#button formulaire#}
+               <button type="button" class="btn btn-warning button1" data-toggle="modal" data-target="#exampleModal"
+                       data-whatever="@getbootstrap"> Conatct <i class="fas fa-cogs"></i></button>
+               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                   <div class="modal-dialog" role="document">
+                       <div class="modal-content text-center my-popup">
+                           <div class="modal-header text-center">
+                               <h5 class="modal-title pop-header ml-auto" id="exampleModalLabel"></h5>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+
+                           </div>
+                           <div class="modal-body">
+                              <h3>formulaire Contact</h3>
+                           </div>
+                       </div>
+                     </div>
+                   </div>
+                  <a href="Mon cv/precious cv.pdf" target="_blank">
+                  <button type="button" class="btn btn-warning button2">Voir mon CV <i
+                    class="fas fa-cloud-download-alt"></i></button>
+                  </a>
+
+            {% endblock %}
